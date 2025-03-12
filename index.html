@@ -8,8 +8,9 @@
             <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
             <style>
                 #map {
-                    height: 500px;
+                    height: 1080px;
                     width: 100%;
+                    background-color: #303030;
                 }
             </style>
         </head>
@@ -24,6 +25,6 @@
             });
             var imageBounds = [[0, 0], [1440, 2560]];
             L.imageOverlay('Arkanis.png', imageBounds).addTo(map);
-            map.fitBounds(imageBounds);
+            map.fitBounds(imageBounds);   
         </script>
     </html>
